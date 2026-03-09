@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Biodata Sevendi</title>
+    <style>
+        /* --- MENGUBAH LATAR BELAKANG MENJADI GRADASI WARNA --- */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.8; 
+            margin: 0; 
+            padding: 20px;
+            /* Gradasi warna dari ungu muda ke biru */
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            /* Memastikan warna memenuhi seluruh tinggi layar */
+            min-height: 100vh;
+        }
+
+        .container { 
+            max-width: 700px; 
+            margin: 40px auto; 
+            background: white; 
+            padding: 30px; 
+            border-radius: 15px; 
+            /* Menambahkan bayangan yang lebih lembut agar kotak putih lebih menonjol */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+            text-align: center; 
+        }
+        
+        .nav-menu {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eee;
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: #764ba2; /* Menyesuaikan warna link dengan tema */
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .nav-menu a:hover {
+            color: #667eea;
+            text-decoration: underline;
+        }
+
+        .profile-img { 
+            width: 150px; 
+            height: 150px;
+            border-radius: 50%; 
+            margin-bottom: 15px; 
+            border: 4px solid #764ba2; /* Warna bingkai disesuaikan */
+            object-fit: cover;
+        }
+        .bio-content {
+            display: inline-block; 
+            text-align: left;      
+            margin: 20px 0;        
+            font-size: 18px;
+        }
+        .map-container { 
+            margin-top: 30px; 
+        }
+        iframe { 
+            width: 100%; 
+            height: 350px; 
+            border: 0; 
+            border-radius: 10px; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="nav-menu">
+        <a href="index.html">Profil</a> |
+        <a href="index2.html">Pendidikan</a> |
+        <a href="index3.html">Skill Teknis</a> |
+        <a href="index4.html">Layout Web</a>
+    </div>
+
+    <img src="foto.jpg" alt="Foto Profil" class="profile-img">
+    
+    <h1 style="color: #333;">Profil Saya</h1>
+    <hr style="width: 20%; border: 1px solid #764ba2;">
+
+    <div class="bio-content">
+        <strong>Nama:</strong> Sevendi <br>
+        <strong>Prodi:</strong> Teknologi Informasi <br>
+        <strong>Kampus:</strong> Universitas di Denpasar <br>
+        <strong>Hobi:</strong> Coding & Analisis Algoritma
+    </div>
+
+    <hr style="width: 80%; margin-top: 20px; border: 0.5px solid #eee;">
+
+    <div class="map-container">
+        <h3 style="color: #333;">Lokasi Rumah</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126214.3414950346!2d115.15423184139366!3d-8.672538805307374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409b0e5e3859%3A0xafeb2239683067c1!2sDenpasar%2C%20Bali!5e0!3m2!1sid!2sid!4v1708800000000!5m2!1sid!2sid" 
+            allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+</div>
+
+</body>
+</html>
